@@ -1,1 +1,1 @@
-web: npm install && npm run build && python main.py
+web: python main.py
