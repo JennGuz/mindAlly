@@ -1,0 +1,72 @@
+#app {
+  max-width: var(--app-max-width);
+  margin: 0 auto;
+  background-color: var(--app-background);
+  padding-bottom: 100px;
+}
+
+.message {
+  background-color: var(--assistant-color-opaque);
+  border-radius: 10px;
+  padding: 10px;
+  width: fit-content;
+  font-size: 18px;
+  position: relative;
+}
+
+.message .prediction {
+  border-radius: 10px;
+  border: 1px solid var(--assistant-color);
+  padding: 2px 5px;
+  font-size: 14px;
+  width: fit-content;
+  position: absolute;
+  bottom: 80%;
+  background-color: rgb(255, 255, 255);
+  right: 0;
+}
+
+.message.user {
+  background-color: var(--user-color);
+  margin-left: auto;
+}
+
+.ChatInputContainer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: var(--app-max-width);
+  padding: 10px;
+  gap: 10px;
+  background-color: var(--input-background);
+}
+
+.ChatInputContainer > textarea {
+  resize: none;
+  padding: 5px;
+  width: 100%;
+  color: var(--font-color);
+  height: 70px;
+  scrollbar-width: none;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--assistant-color);
+}
+
+.ChatHeaderContainer {
+  display: flex;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: var(--app-background);
+  z-index: 100;
+}
+
+.MessagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}

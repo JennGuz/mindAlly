@@ -1,0 +1,110 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --assistant-color-opaque: #d2ccd175;
+  --assistant-color: #f19fe9b5;
+  --user-color: #f19fe98b;
+  --header-background: #f0f0f0ee;
+
+  --app-max-width: 800px;
+  --app-background: #ffffff;
+
+  --input-background: #ffffff;
+  --font-color: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  color-scheme: light dark;
+}
+body {
+  background-color: var(--app-background);
+}
+a {
+  text-decoration: inherit;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-x {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap-medium {
+  gap: 30px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.padding-small {
+  padding: 5px;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.assistant-color {
+  color: var(--assistant-color);
+}
+
+.app-max-width {
+  max-width: var(--app-max-width);
+  width: 100%;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.inline-auto {
+  margin: auto;
+}
+
+.loading-animation {
+  font-weight: bold;
+  color: var(--font-color);
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
